@@ -19,7 +19,7 @@ jobs:
           bash -c "
           vcs import --skip-existing < src/ros2.repos src \
           && apt-get update \
-          && cd src/AutowareAuto \
+          && cd src/AutowareAuto/ \
           && vcs import < autoware.auto.$ROS_DISTRO.repos \ 
           && cd ../.. \
           && rosdep update \
